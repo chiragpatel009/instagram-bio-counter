@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Bio Character Counter - Emoji Friendly</title>
+  <meta name="description" content="Easily count Instagram bio characters with emoji support. Free, fast, and mobile-friendly tool for content creators." />
+
+  <!-- SEO & Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chiragpatel009.github.io/instagram-bio-counter" />
+  <meta property="og:title" content="Instagram Bio Character Counter - Emoji Friendly" />
+  <meta property="og:description" content="Easily count Instagram bio characters with emoji support. Free, fast, and mobile-friendly tool for content creators." />
+  <meta property="og:image" content="https://placehold.co/1200x630.png?text=Instagram+Bio+Counter" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://chiragpatel009.github.io/instagram-bio-counter" />
+  <meta name="twitter:title" content="Instagram Bio Character Counter - Emoji Friendly" />
+  <meta name="twitter:description" content="Easily count Instagram bio characters with emoji support. Free, fast, and mobile-friendly tool for content creators." />
+  <meta name="twitter:image" content="https://placehold.co/800x418.png?text=Instagram+Bio+Counter" />
+
+  <link rel="canonical" href="https://chiragpatel009.github.io/instagram-bio-counter" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Instagram Bio Character Counter</h1>
+    <p>Type or paste your Instagram bio below to see the real-time character count. Emojis are counted as 2 characters, just like Instagram does!</p>
+    <textarea id="bioInput" placeholder="Start typing your Instagram bio here..." aria-label="Instagram bio input"></textarea>
+    <div class="counter-info">
+      <div class="count-item">Total: <span id="totalCharCount" class="count-value">0</span> / 150</div>
+      <div class="count-item">Emojis: <span id="emojiCount" class="count-value">0</span></div>
+      <div class="count-item">Normal: <span id="normalCharCount" class="count-value">0</span></div>
+    </div>
+    <p id="warningMessage" class="warning" style="display: none;">You've exceeded the 150 character limit for Instagram bios!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
